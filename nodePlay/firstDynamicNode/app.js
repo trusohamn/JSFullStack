@@ -1,5 +1,5 @@
 var http = require('http');
-const hostname = '127.0.0.1';
+const hostname = '127.0.0.1'; //not used for heroku depl
 const port = process.env.PORT || 3000;
 
 //create web server
@@ -24,8 +24,8 @@ http.createServer(function (request, response) {
         response.end();
   }
 
-}).listen(port, hostname);
-console.log(`Server running at ${hostname}:${port}`);
+}).listen(port);
+console.log(`Server running at :${port}`);
 
 //GET response Home -> index.html, display the form
 
