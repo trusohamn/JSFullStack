@@ -1,0 +1,35 @@
+* {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em 0.1em #555188;
+}
+
+.main {
+    width: 80%;
+    margin: 2em auto;
+    background-color: rgb(48, 109, 109);
+    padding: 2em 0em;
+    box-shadow: 0px 0px 35px -15px rgb(17, 59, 59) inset,
+        5px 5px 20px rgb(135, 158, 158);
+    border-radius: 12px;
+}
+
+
+input {
+    width: 70%;
+    display: block;
+}
+
+input:last-of-type {
+    margin-bottom: 1em;
+}
+
+h1,
+#main-form {
+    width: 60%;
+    margin: 0em auto;
+
+}
+#main-form {
+    padding: 2em 0em;
+   
+}

@@ -5,10 +5,10 @@ http.createServer(function (request, response) {
     if (request.url === '/style.css') {
         //loading the css, call the url /stye.css
         console.log('loading css')
-        
+
         response.writeHead(200, {'Content-type' : 'text/css'});
 
-        var fileContents = fs.readFileSync('./css/style.css', {encoding: 'utf8'});
+        var fileContents = fs.readFileSync('./views/style.css', {encoding: 'utf8'});
         response.write(fileContents);
 
         response.end();
