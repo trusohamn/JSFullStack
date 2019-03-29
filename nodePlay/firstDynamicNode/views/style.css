@@ -5,6 +5,7 @@
 
 .main {
     width: 80%;
+    max-width: 500px;
     margin: 2em auto;
     background-color: rgb(48, 109, 109);
     padding: 2em 0em;
@@ -17,6 +18,8 @@
 input {
     width: 70%;
     display: block;
+    color:  rgb(145, 146, 150);
+    text-shadow: none;
 }
 
 input:last-of-type {
@@ -32,4 +35,8 @@ h1,
 #main-form {
     padding: 2em 0em;
    
+}
+
+#results {
+    text-align: center;
 }
