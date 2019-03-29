@@ -1,4 +1,6 @@
 var http = require('http');
+const hostname = '127.0.0.1';
+const port = process.env.PORT || 3000;
 
 //create web server
 http.createServer(function (request, response) {  
@@ -22,8 +24,8 @@ http.createServer(function (request, response) {
         response.end();
   }
 
-}).listen(3000, '127.0.0.1');
-console.log('Server running at localhost');
+}).listen(port, hostname);
+console.log(`Server running at ${hostname}:${port}`);
 
 //GET response Home -> index.html, display the form
 
