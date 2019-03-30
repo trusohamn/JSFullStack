@@ -23,7 +23,10 @@ http.createServer(function (request, response) {
       console.log('loading html');
       response.writeHead(200, { 'Content-Type': 'text/html' });
 
-      view(response, 'index');
+      view(response, 'head');
+      view(response, 'form');
+      view(response, 'footer');
+
       response.end();
     }
   } else {
@@ -35,7 +38,12 @@ http.createServer(function (request, response) {
       //extract the username
       var query = querystring.parse(postBody.toString());
       console.dir(query);
-      view(response, 'result', query);
+      
+      view(response, 'head');
+      view(response, 'form');
+      view(response, 'result');
+      view(response, 'footer');
+
       //redirect to /:username
       //response.writeHead(303, {"Location" : '/' + query.username});
       response.end();  
