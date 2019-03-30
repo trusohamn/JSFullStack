@@ -34,9 +34,17 @@ h1,
 }
 #main-form {
     padding: 2em 0em;
-   
+} 
+
+.results {
+    text-align: center;
+    font-weight: bold;
 }
 
-#results {
-    text-align: center;
+#result-ok {
+    background-color: rgb(6, 85, 3);
+}
+
+.error {
+    background-color: rgb(255, 78, 47);
 }
