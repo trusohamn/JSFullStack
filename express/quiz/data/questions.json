@@ -1,0 +1,31 @@
+{
+    "data": {
+        "title": "Questions",
+        "questions": [
+            {
+                "question": "How are you",
+                "answers": [
+                    "Great",
+                    "Super cool",
+                    "Not so well",
+                    "Could be better"
+                ]
+            },
+            {
+                "question": "What are your plans",
+                "answers": [
+                    "No plans",
+                    "Climbing",
+                    "Walk"
+                ]
+            },
+            {
+                "question": "Do you agree",
+                "answers": [
+                    "Yes",
+                    "No"
+                ]
+            }
+        ]
+    }
+}

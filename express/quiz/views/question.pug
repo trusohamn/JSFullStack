@@ -1,0 +1,13 @@
+extends layout
+
+block main
+    h2 #{question}
+    form(action="/answer" method="post")
+        input(type="hidden" name="qn" value=question)
+        ul
+            each answer in answers
+                li
+                    input(type="checkbox")
+                    label #{answer}
+           
+        button(type="submit") Ok
